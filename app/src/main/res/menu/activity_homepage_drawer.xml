@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="disaster">
+            <menu>
+        <item
+            android:id="@+id/nav_earthquakes"
+            android:icon="@mipmap/nav_earthquake"
+            android:title="Earthquacks" />
+        <item
+            android:id="@+id/nav_floods"
+            android:icon="@mipmap/nav_floods"
+            android:title="Floods" />
+        <item
+            android:id="@+id/nav_wildfires"
+            android:icon="@mipmap/nav_wildfires"
+            android:title="Wildfires" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_hurricanes"
+            android:icon="@mipmap/nav_hurricanes"
+            android:title="Tropical Storms" />
+
+
+        <item
+            android:id="@+id/nav_drought"
+            android:icon="@mipmap/nav_drought"
+            android:title="Drought" />
+        <item
+            android:id="@+id/nav_tornado"
+            android:icon="@mipmap/nav_tornado"
+            android:title="Severe Storms" />
+        <item
+            android:id="@+id/nav_hurricanes3"
+            android:icon="@mipmap/nav_hurricanes"
+            android:title="Tropical Storms" />
+
+    </group>
+
+    <item android:title="Emergency Tools">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
