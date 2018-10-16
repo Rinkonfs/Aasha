@@ -21,12 +21,31 @@
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_homepage" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabtorch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:borderWidth="0dp"
+        android:src="@mipmap/ic_fab_flashlight" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabcompass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/white"
+        app:borderWidth="0dp"
+        android:src="@mipmap/ic_fab_compass" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabcreate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
+        app:borderWidth="0dp"
         android:layout_margin="@dimen/fab_margin"
         android:src="@drawable/ic_create_black_24dp" />
 

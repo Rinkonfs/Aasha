@@ -5,4 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorbrownish">#fd746c</color>
     <color name="colorMetal">#43464B</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#e20e4d0d</color>
+    <color name="red">#e3960c1a</color>
 </resources>

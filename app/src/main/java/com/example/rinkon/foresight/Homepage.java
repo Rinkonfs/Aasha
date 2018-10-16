@@ -17,7 +17,10 @@ public class Homepage extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     FloatingActionButton fabcreate;
     FloatingActionButton fabadd;
-
+    FloatingActionButton fabtorch;
+    FloatingActionButton fabcompass;
+    boolean click=false;
+    boolean torchclick=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,11 +29,43 @@ public class Homepage extends AppCompatActivity
         setSupportActionBar(toolbar);
         fabcreate =findViewById(R.id.fabcreate);
         fabadd =findViewById(R.id.fabadd);
+        fabtorch =findViewById(R.id.fabtorch);
+        fabcompass =findViewById(R.id.fabcompass);
+        fabtorch.setBackgroundTintList(fabtorch.getResources().getColorStateList(R.color.red));
+
 
         fabadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fabcreate.animate().rotationY(10);
+                if(!click){
+                    fabadd.animate().rotation(135).setStartDelay(100);
+                    fabcreate.animate().translationY(-200).setStartDelay(100);
+                    fabtorch.animate().translationX(-200).setStartDelay(100);
+                    fabcompass.animate().translationX(-400).setStartDelay(100);
+                    click=true;
+                }else
+                {
+                    fabadd.animate().rotation(0).setStartDelay(100);
+                    fabcreate.animate().translationY(0).setStartDelay(100);
+                    fabtorch.animate().translationX(0).setStartDelay(100);
+                    fabcompass.animate().translationX(0).setStartDelay(100);
+                    click=false;
+                }
+
+            }
+        });
+
+        fabtorch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!torchclick){
+                    fabtorch.setBackgroundTintList(fabtorch.getResources().getColorStateList(R.color.green));
+                    torchclick=true;
+                }else
+                {
+                    fabtorch.setBackgroundTintList(fabtorch.getResources().getColorStateList(R.color.red));
+                    torchclick=false;
+                }
             }
         });
 
