@@ -28,6 +28,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:borderWidth="0dp"
+        android:tint="@color/white"
         android:src="@mipmap/ic_fab_flashlight" />
 
     <android.support.design.widget.FloatingActionButton
