@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 public class SplashScreen extends AppCompatActivity {
 
-    ImageView ssIvIcsplash;
-    TextView ssTvName;
+    private ImageView ssIvIcsplash;
+    private TextView ssTvName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
