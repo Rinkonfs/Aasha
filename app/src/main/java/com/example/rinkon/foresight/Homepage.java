@@ -162,7 +162,7 @@ public class Homepage extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_earthquakes) {
-          getSupportFragmentManager().beginTransaction().replace(R.)
+         // getSupportFragmentManager().beginTransaction().replace(R.)
         } else if (id == R.id.nav_floods) {
 
         } else if (id == R.id.nav_wildfires) {
