@@ -30,6 +30,7 @@ public class Homepage extends AppCompatActivity
     private boolean isFlashLightOn = false;
     private boolean click=false;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +42,7 @@ public class Homepage extends AppCompatActivity
         fabtorch =findViewById(R.id.fabtorch);
         fabcompass =findViewById(R.id.fabcompass);
         fabtorch.setBackgroundTintList(fabtorch.getResources().getColorStateList(R.color.red));
-        deviceHasFlash =getApplication().getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH);
+        /*deviceHasFlash =getApplication().getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH);
         if(!deviceHasFlash){
             Toast.makeText(Homepage.this, "Sorry, you device does not have any camera", Toast.LENGTH_LONG).show();
             return;
@@ -49,7 +50,7 @@ public class Homepage extends AppCompatActivity
         else{
             this.camera = Camera.open(0);
             parameter = this.camera.getParameters();
-        }
+        }*/
 
 /*-------------------Floating button START---------------------------------------------------------*/
         fabadd.setOnClickListener(new View.OnClickListener() {
@@ -76,11 +77,11 @@ public class Homepage extends AppCompatActivity
         fabtorch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!isFlashLightOn){
+                /*if(!isFlashLightOn){
                     turnOnTheFlash();
                 }else{
                     turnOffTheFlash();
-                }
+                }*/
             }
         });
 /* -----------------------Floating button END-------------------------------------------*/
@@ -93,7 +94,7 @@ public class Homepage extends AppCompatActivity
         NavigationView navigationView =  findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
-    private void turnOffTheFlash() {
+    /*private void turnOffTheFlash() {
         parameter.setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
         this.camera.setParameters(parameter);
         this.camera.stopPreview();
@@ -120,7 +121,7 @@ public class Homepage extends AppCompatActivity
                 System.out.println("Error: Failed to Open: " + e.getMessage());
             }
         }
-    }
+    }*/
 
     @Override
     public void onBackPressed() {
@@ -161,7 +162,7 @@ public class Homepage extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_earthquakes) {
-            // Handle the camera action
+          getSupportFragmentManager().beginTransaction().replace(R.)
         } else if (id == R.id.nav_floods) {
 
         } else if (id == R.id.nav_wildfires) {
@@ -181,28 +182,28 @@ public class Homepage extends AppCompatActivity
     @Override
     protected void onStop() {
         super.onStop();
-        if(this.camera != null){
+        /*if(this.camera != null){
             this.camera.release();
             this.camera = null;
-        }
+        }*/
     }
     @Override
     protected void onPause() {
         super.onPause();
-        turnOffTheFlash();
+        /*turnOffTheFlash();*/
     }
     @Override
     protected void onResume() {
         super.onResume();
-        if(deviceHasFlash){
+        /*if(deviceHasFlash){
             turnOffTheFlash();
-        }
+        }*/
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        getCamera();
+       /* getCamera();*/
     }
 }
 
