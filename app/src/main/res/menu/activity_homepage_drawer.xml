@@ -4,27 +4,104 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item android:title="Earthquacks">
+        <item android:title="Geological disasters">
             <menu>
-        <item
-            android:id="@+id/nav_earthquakes"
-            android:icon="@mipmap/nav_earthquake"
-            android:title="Earthquacks" />
+                <item
+                    android:id="@+id/nav_avalanches_and_landslides"
+                    android:icon="@drawable/nav_landslide_and_house"
+                    android:title="Avalanches and landslides" />
+                <item
+                    android:id="@+id/nav_earthquakes"
+                    android:icon="@drawable/nav_earthquake"
+                    android:title="Earthquakes" />
+                <item
+                    android:id="@+id/nav_sinkholes"
+                    android:icon="@drawable/nav_sinkhole"
+                    android:title="Sinkholes" />
+                <item
+                    android:id="@+id/nav_volcanic_eruptions"
+                    android:icon="@drawable/nav_volcano"
+                    android:title="Volcanic eruptions" />
             </menu>
         </item>
-        <item android:title="Storms">
+        <item android:title="Hydrological disasters">
             <menu>
-        <item
-            android:id="@+id/nav_floods"
-            android:icon="@mipmap/nav_floods"
-            android:title="Floods" />
-        <item
-            android:id="@+id/nav_wildfires"
-            android:icon="@mipmap/nav_wildfires"
-            android:title="Wildfires" />
+                <item
+                    android:id="@+id/nav_floods"
+                    android:icon="@mipmap/nav_floods"
+                    android:title="Floods" />
+                <item
+                    android:id="@+id/nav_Tsunami"
+                    android:icon="@drawable/nav_tsunami"
+                    android:title="Tsunami" />
+                <item
+                    android:id="@+id/nav_limnic_eruptions"
+                    android:icon="@drawable/nav_liminic_eruption"
+                    android:title="Limnic eruptions" />
             </menu>
 
         </item>
+        <item android:title="Meteorological disasters">
+            <menu>
+                <item
+                android:id="@+id/nav_cyclonic_storms"
+                android:icon="@drawable/nav_cyclone"
+                android:title="Cyclonic storms" />
+                <item
+                    android:id="@+id/nav_blizzards"
+                    android:icon="@drawable/ic_blizzard"
+                    android:title="Blizzards" />
+                <item
+                    android:id="@+id/nav_hailstorms"
+                    android:icon="@drawable/nav_hailstorm"
+                    android:title="Hailstorms" />
+                <item
+                    android:id="@+id/nav_ice_storms"
+                    android:icon="@drawable/nav_icestrom"
+                    android:title="Ice storms" />
+                <item
+                    android:id="@+id/nav_cold_waves"
+                    android:icon="@drawable/ic_cold_wave"
+                    android:title="Cold waves" />
+                <item
+                    android:id="@+id/nav_heat_waves"
+                    android:icon="@drawable/nav_heatwave"
+                    android:title="Heat waves" />
+                <item
+                    android:id="@+id/nav_droughts"
+                    android:icon="@drawable/nav_drought"
+                    android:title="Droughts" />
+                <item
+                    android:id="@+id/nav_thunderstorms"
+                    android:icon="@drawable/nav_thunder_storm"
+                    android:title="Thunderstorms" />
+                <item
+                    android:id="@+id/nav_tornadoes"
+                    android:icon="@drawable/nav_tornado"
+                    android:title="tornadoes" />
+            </menu>
+        </item>
+        <item android:title="Wildfires">
+            <menu>
+                <item
+                    android:id="@+id/nav_wildfires"
+                    android:icon="@mipmap/nav_floods"
+                    android:title="Wildfires" />
+            </menu>
+        </item>
+        <item android:title="Space disasters">
+            <menu>
+                <item
+                    android:id="@+id/nav_impact_events_and_airburst"
+                    android:icon="@mipmap/nav_earthquake"
+                    android:title="Impact events and airburst" />
+                <item
+                    android:id="@+id/nav_solar_flare"
+                    android:icon="@mipmap/nav_earthquake"
+                    android:title="Solar flare" />
+                </menu>
+        </item>
+
         <item
             android:id="@+id/nav_hurricanes"
             android:icon="@mipmap/nav_hurricanes"
@@ -60,6 +137,10 @@
                 android:id="@+id/nav_map"
                 android:icon="@drawable/ic_map_black_24dp"
                 android:title="Map" />
+            <item
+                android:id="@+id/nav_credit"
+                android:icon="@drawable/ic_copyright"
+                android:title="Credit" />
         </menu>
     </item>
 

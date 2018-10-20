@@ -1,6 +1,7 @@
 package com.example.rinkon.foresight;
 
 
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.os.Bundle;
@@ -21,8 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class Homepage extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class Homepage extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private FloatingActionButton fabcreate;
     private FloatingActionButton fabadd;
     private FloatingActionButton fabtorch;
@@ -103,6 +103,22 @@ public class Homepage extends AppCompatActivity
                 }*/
             }
         });
+
+        fabcompass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Homepage.this, Compass
+                        .class));
+            }
+        });
+
+        fabcreate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Homepage.this, ToDoList
+                        .class));
+            }
+        });
 /* -----------------------Floating button END-------------------------------------------*/
 
 
@@ -151,6 +167,7 @@ public class Homepage extends AppCompatActivity
         } else if (id == R.id.nav_floods) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new TornadoFragment()).commit();
         } else if (id == R.id.nav_wildfires) {
+
 
         } else if (id == R.id.nav_hurricanes) {
 

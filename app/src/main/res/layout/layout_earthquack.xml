@@ -1,24 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".Homepage"
-     >
-    <!--<include-->
-    <TextView
+    android:fillViewport="true"
+    android:layout_marginTop="70dp">
+
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/action_login"
-        android:layout_gravity="center"
-        android:textSize="60sp"/>
+        android:stretchColumns="1">
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/earthquack_title"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="An earthquake (also known as a quake, tremor or tremblor) is the perceptible shaking of the surface of the Earth, resulting from the sudden release of energy in the Earth's crust that creates seismic waves."
+            android:layout_gravity="center"
+            android:textSize="15sp" />-->
+       <!-- <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:src="@drawable/img_earthquake1" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/earthquack_sg"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            />
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:src="@drawable/img_1" />
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:src="@drawable/img_2" />
 
 
-
-
-
-
-</LinearLayout>
+    </TableLayout>
+</ScrollView>

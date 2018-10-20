@@ -8,4 +8,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="action_login">Login</string>
+    <string name="earthquack_title">What is an Earthquake?</string>
+    <!--<string name="earthquack_description">An earthquake (also known as a quake, tremor or tremblor)</string>
+        is the perceptible shaking of the surface of the Earth, resulting from the sudden
+        release of energy in the Earth's crust that creates seismic waves.</string>-->
+    <string name="earthquack_sg">SAFETY GUIDELINES</string>
+
+
 </resources>
